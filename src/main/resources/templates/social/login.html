@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<script th:inline="javascript">
+/*<![CDATA[*/
+
+
+    function popupKakaoLogin() {
+        var loginUrl = [[${loginUrl}]];
+        window.open(loginUrl, 'popupKakaoLogin', 'width=700,height=500,scrollbars=0,toolbar=0,menubar=no')
+    }
+
+
+/*]]>*/
+</script>
+<body>
+<button onclick="popupKakaoLogin()">KakaoLogin</button>
+</body>
+</html>
